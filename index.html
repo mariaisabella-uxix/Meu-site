@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Isabella | Espaço Pessoal</title>
+
+    <!-- Fonte do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">Maria Isabella</div>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Apresentação Principal (Hero / Sobre) -->
+    <section id="sobre" class="hero">
+        <div class="Avatar">✨</div>
+        <div class="hero-text">
+            <h1>Olá! Me chamo Maria Isabella e esse é o meu primeiro site.</h1>
+            <p>Sou uma estudante do Ens. Médio apaixonada por aprender coisas novas da minha área, universo musical,
+                universo cinematográfico e Dança!</p>
+        </div>
+    </section>
+
+    <!-- Seção navegativa de abas -->
+    <section class="sobre-mim-container">
+
+        <!-- Botões de controle da navegação -->
+        <div class="tabs-header">
+            <button class="tab-btn active" onclick="mostrarPagina(1)">Quem Sou</button>
+            <button class="tab-btn" onclick="mostrarPagina(2)">Habilidades & Objetivos</button>
+        </div>
+
+        <!-- Janela de visualização (viewer) -->
+        <div class="slider-viewport">
+            <!-- wrapper duplo (janelas lado a lado) -->
+            <div id="sliderWrapper" class="slider-wrapper">
+
+                <!-- PÁGINA 1: QUEM SOU -->
+                <div class="page-slide">
+                    <h2>Quem Sou</h2>
+                    <p>Criei este site com o objetivo de pessoas conhecerem um pouco de mim, compartilhando os projetos
+                        que venho desenvolvendo e registrar minhas conquistas!</p>
+                    <p>Gosto de aprender com novas tecnologias, testar minha capacidade para criar páginas web e
+                        conciliar os trabalhos escolares com meus hobbys em assistir a filmes, testar jogos e ouvir
+                        música.</p>
+
+                    <!-- Botão para ir para a Página 2 -->
+                    <button class="btn-slide-next" onclick="mostrarPagina(2)">ir para Habilidades & Objetivos ➔</button>
+                </div>
+
+                <!-- PÁGINA 2 - HABILIDADES & OBJETIVOS -->
+                <div class="page-slide">
+                    <h2>Habilidades & Objetivos</h2>
+                    <div class="skills-grid">
+                        <span class="skill-badge">HTML5 Semântico</span>
+                        <span class="skill-badge">CSS3 Responsivo</span>
+                        <span class="skill-badge">JavaScript Básico</span>
+                        <span class="skill-badge">Figma / UI Design</span>
+                        <span class="skill-badge">Git & GitHub</span>
+                    </div>
+
+                    <h2>Meus Objetivos</h2>
+                    <p>Meu foco atual é dominar a criação de interfaces web modernas, aprimorar minha experiência em
+                        lógica de programação e concluir o Ensino Médio com projetos práticos no meu portfólio.</p>
+                    <button class="btn-slide-next" onclick="mostrarPagina(1)"> ← Voltar para Quem Sou</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Seção de Cards -->
+    <section id="projetos" class="projetos-section">
+        <h2>Meus Cantinhos & Projetos</h2>
+
+        <div class="grid-cards">
+            <!-- Card 1 -->
+            <div class="card">
+                <h3>📚 Trabalhos & Leituras</h3>
+                <p>Trabalhos escolares e minhas leituras acompanhadas no Goodreads.</p>
+                <div class="tags">
+                    <a href="https://docs.google.com/presentation/d/1l3GKxSVG53Peb_iSCoOAxA71h4AkLeJxrNhNZ06GvmY/edit?slide=id.gd251bb473_0_681#slide=id.gd251bb473_0_681" target="_blank" rel="noopener noreferrer" class="tag-link">📄 Trabalho Escolar ↗</a>
+                    <a href="https://www.goodreads.com/review/list/205728507-maria-isabella?shelf=read" target="_blank" rel="noopener noreferrer" class="tag-link">📚 Minha Estante ↗</a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <h3>💻 Web Development</h3>
+                <p>Estudos de linguagens em aprendizagem, como Python e C e pequenos experimentos.</p>
+                <div class="tags">
+                    <a href="https://drive.google.com/drive/u/1/folders/1cuw8H6M30HLuHHlHvyhyiLLcjFaOi9AN" target="_blank" rel="noopener noreferrer" class="tag-link">⚙️ Programas ↗</a>
+                    <a href="https://cursos.alura.com.br/user/maria-santos-peixoto" target="_blank" rel="noopener noreferrer" class="tag-link">🎓 Alura ↗</a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <h3>🎧 Músicas & Cinema</h3>
+                <p>Minhas recomendações de filmes favoritos & minhas playlists no Spotify.</p>
+
+                <div class="tags">
+                    <a href="https://open.spotify.com/user/31vpghg62jswinvkhz5anrzrfwny?si=ae1121af38d74a2e" target="_blank" rel="noopener noreferrer" class="tag-link">🎵 Spotify ↗</a>
+                    <a href="https://letterboxd.com/taypsiu/list/favs/" target="_blank" rel="noopener noreferrer" class="tag-link">🎬 Filmes ↗</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer id="contato">
+        <p>Desenvolvido por Maria Isabella & Gemini</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/jmxwzz.m/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://github.com/mariaisabella-uxix" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://open.spotify.com/user/31vpghg62jswinvkhz5anrzrfwny?si=ae1121af38d74a2e" target="_blank" rel="noopener noreferrer">Spotify</a>
+            <a href="https://discord.com/users/1054522434805571654" target="_blank" rel="noopener noreferrer">Discord</a>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
